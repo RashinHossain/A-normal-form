@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in </title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        .btn{
+            background-color: rgb(0, 0, 0);
+            margin-top: 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 5px 3px 5px rgb(31, 30, 30);
+            color: white;
+        }
+        *{
+            background-image: url("data:image/jpeg;base64,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");
+            color: white;
+        
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Please Fill Up The Form</h2>
+            <form>
+                <label for="name">Your Name  : 
+                    <input id="name" type="Your Namr" placeholder="Full Name ">
+                </label>
+
+                <label for="email">Your Email :
+                    <input id="email" type="email" placeholder="example@.com">
+                </label>
+                <label for="phone">Your Phone :
+                    <input id="phone" type="Your Phone"  placeholder="01*********">
+                </label>
+
+
+                <fieldset>
+                    <legend>
+                        Pick Your Gender
+                    </legend>
+                    <label for="gender">
+                        <input type="radio" name="Gender" >Male
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="Gender">Female
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="Gender">Custom
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Your Country
+                    </legend>
+                    
+                    <label for="country"></label>
+                    <input type="checkbox" name="country" >Bangladesh
+                    </label>
+                    <label for="country">
+                        <input type="checkbox" name="country">India
+                    </label>
+                </fieldset>
+                    <input type="reset" class="btn"> 
+
+
+            </form>
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
